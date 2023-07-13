@@ -3,28 +3,39 @@ import './App.css';
 import GenerateNewAddress from './components/generate_address';
 import ShowPublicKey from './components/show_public_key';
 import ShowMnemonic from './components/show_mnemonic';
+import MainComponent from './components/algorand_main';
+import TextContainer from './components/text_container';
+import NavMain from './components/NavBar';
 function App() {
-  const [address,setAddress] = useState(null);
+  const [address, setAddress] = useState(null);
   const handleAddressUpdate = (address) => {
     setAddress(address);
   }
   return (
-    <div className='container'>
-      <GenerateNewAddress address={address} handleAddressUpdate={handleAddressUpdate} />
+    <div >
+      <NavMain address={address} handleAddressUpdate={handleAddressUpdate} />
       {
         address && (
-          <div className="row row-cols-1 row-cols-md-2 g-4">
-            <div className='col'>
-              <ShowPublicKey pub_key={address.addr} />
-            </div>
-            <div className='col'>
-              <ShowMnemonic mnemonic={address.mnemonic} />
+          <div className='print-only container mt-3' style={{ maxWidth: "210mm" }}>
+            <div className="row row-cols-2" >
+              <div className='col p-0'>
+                <MainComponent />
+              </div>
+              <div className='col p-0'>
+                <ShowMnemonic mnemonic={address.mnemonic} />
+              </div>
+              <div className='col p-0 z-2'>
+                <ShowPublicKey pub_key={address.addr} />
+              </div>
+              <div className='col p-0 z-1'>
+                <TextContainer />
+              </div>
             </div>
           </div>
         )
       }
     </div>
-    
+
   );
 }
 

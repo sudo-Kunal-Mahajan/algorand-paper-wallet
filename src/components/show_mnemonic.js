@@ -9,10 +9,10 @@ const ShowMnemonic = ({mnemonic}) => {
                         <h2>Your Menmonic</h2>
                         <p>Keep this safe. Losing this means loss of your funds</p>
                     </div>
-                    <div className="card-text text-wrap">
-                        {mnemonic.split(" ").map((ele) => {
-                            return <span className="mx-2" key={i++}>{ele}</span>
-                        })}
+                    <div className="card-text  d-flex align-items-center justify-content-center">
+                        <p className="m-4 p-4 allow_wrap">
+                        {mnemonic}
+                        </p>
                     </div>
                 </div>
             </div>

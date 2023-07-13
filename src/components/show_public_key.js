@@ -11,7 +11,7 @@ const ShowPublicKey = ({pub_key}) => {
                     </div>
                     <div className="card-text text-center">
                         <QRCode value={pub_key} />
-                        <p>{pub_key}</p>
+                        <p className="mt-2">{pub_key}</p>
                     </div>
                 </div>
             </div>
