@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
-
+import GenerateNewAddress from './components/generate_address';
+import ShowPublicKey from './components/show_public_key';
+import ShowMnemonic from './components/show_mnemonic';
 function App() {
+  const [address,setAddress] = useState(null);
+  const handleAddressUpdate = (address) => {
+    setAddress(address);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <GenerateNewAddress address={address} handleAddressUpdate={handleAddressUpdate} />
+      {
+        address && (
+          <div className="row row-cols-1 row-cols-md-2 g-4">
+            <div className='col'>
+              <ShowPublicKey pub_key={address.addr} />
+            </div>
+            <div className='col'>
+              <ShowMnemonic mnemonic={address.mnemonic} />
+            </div>
+          </div>
+        )
+      }
     </div>
+    
   );
 }
 
