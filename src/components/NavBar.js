@@ -1,6 +1,6 @@
 
 
-const NavMain = ({ address, handleAddressUpdate }) => {
+const NavMain = () => {
 
     return (
         <>
@@ -19,11 +19,11 @@ const NavMain = ({ address, handleAddressUpdate }) => {
 
 
                                 <li className="nav-item ">
-                                    <a href="" className="nav-link text-white">Github</a>
+                                    <a href="https://github.com/sudo-Kunal-Mahajan/algorand-paper-wallet" target="_blank" rel="noreferrer"  className="nav-link text-white">Github</a>
                                 </li>
 
                                 <li className="nav-item ">
-                                    <a href="" className="nav-link text-white">About Algorand</a>
+                                    <a href="https://algorand.com/" target="_blank" rel="noreferrer" className="nav-link text-white">About Algorand</a>
                                 </li>
 
                             </ul>

@@ -65,8 +65,8 @@ export const TitlePage = ({ address, handleAddressUpdate }) => {
                         <div className="card-body">
                             
                                 If you like this tool and would like to encourage development, tips are welcome 
-                                <a href="https://algoexplorer.io/address/NA4VOZFZFSGZM6AQMMUMEIDSPQXN4GLEDE7OD4SFVNHV7APXIIWNL62AT4" className="text-decoration-none"> NA4V...T4</a> 
-                                <button role="button" className="btn btn-outline-white btn-white text-primary" onClick={copyToClipboard}> 
+                                <a href="https://algoexplorer.io/address/NA4VOZFZFSGZM6AQMMUMEIDSPQXN4GLEDE7OD4SFVNHV7APXIIWNL62AT4" target="_blank" rel="noreferrer" className="text-decoration-none"> NA4V...T4</a> 
+                                <button className="btn btn-outline-white btn-white text-primary" onClick={copyToClipboard}> 
                             <svg fill="currentColor" width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20,16V4H8V16H20M22,16A2,2 0 0,1 20,18H8C6.89,18 6,17.1 6,16V4C6,2.89 6.89,2 8,2H20A2,2 0 0,1 22,4V16M16,20V22H4A2,2 0 0,1 2,20V7H4V20H16Z"></path></svg> 
                             </button>
                         </div>
