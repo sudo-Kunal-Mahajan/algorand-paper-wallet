@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/paper-wallet/static/css/main.0dfbb753.css",
+    "main.js": "/paper-wallet/static/js/main.eee4f15f.js",
+    "index.html": "/paper-wallet/index.html",
+    "main.0dfbb753.css.map": "/paper-wallet/static/css/main.0dfbb753.css.map",
+    "main.eee4f15f.js.map": "/paper-wallet/static/js/main.eee4f15f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0dfbb753.css",
+    "static/js/main.eee4f15f.js"
+  ]
+}
