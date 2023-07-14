@@ -16,26 +16,16 @@ const NavMain = ({ address, handleAddressUpdate }) => {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
 
                             <ul className="navbar-nav  ms-auto">
-                                {
-                                    address && (
-                                        <>
-                                            <li className="nav-item">
-                                                <button type="button" className="nav-link" data-bs-toggle="modal" data-bs-target="#addAccountSeed">Print</button>
-                                            </li>
-                                            <li className="nav-item ">
-                                               
-                                            </li>
-                                        </>
-                                    )
-                                }
-                                {!address && (
-                                    <>
-                                        <li className="nav-item ">
-                                            
-                                        </li>
-                                    </>
 
-                                )}
+
+                                <li className="nav-item ">
+                                    <a href="" className="nav-link text-white">Github</a>
+                                </li>
+
+                                <li className="nav-item ">
+                                    <a href="" className="nav-link text-white">About Algorand</a>
+                                </li>
+
                             </ul>
 
 
