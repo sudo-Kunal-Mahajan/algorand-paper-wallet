@@ -1,4 +1,4 @@
-import GenerateNewAddress from "./generate_address";
+
 
 const NavMain = ({ address, handleAddressUpdate }) => {
 
@@ -23,7 +23,7 @@ const NavMain = ({ address, handleAddressUpdate }) => {
                                                 <button type="button" className="nav-link" data-bs-toggle="modal" data-bs-target="#addAccountSeed">Print</button>
                                             </li>
                                             <li className="nav-item ">
-                                                <GenerateNewAddress address={address} handleAddressUpdate={handleAddressUpdate} />
+                                               
                                             </li>
                                         </>
                                     )
@@ -31,7 +31,7 @@ const NavMain = ({ address, handleAddressUpdate }) => {
                                 {!address && (
                                     <>
                                         <li className="nav-item ">
-                                            <GenerateNewAddress address={address} handleAddressUpdate={handleAddressUpdate} />
+                                            
                                         </li>
                                     </>
 

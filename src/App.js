@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './App.css';
-import GenerateNewAddress from './components/generate_address';
 import ShowPublicKey from './components/show_public_key';
 import ShowMnemonic from './components/show_mnemonic';
 import MainComponent from './components/algorand_main';
 import TextContainer from './components/text_container';
 import NavMain from './components/NavBar';
+import TitlePage from './components/title_page';
 function App() {
   const [address, setAddress] = useState(null);
   const handleAddressUpdate = (address) => {
@@ -13,7 +13,10 @@ function App() {
   }
   return (
     <div >
-      <NavMain address={address} handleAddressUpdate={handleAddressUpdate} />
+      <NavMain/>
+      {!address && (
+        <TitlePage address={address} handleAddressUpdate={handleAddressUpdate} />
+      )}
       {
         address && (
           <div className='print-only container mt-3' style={{ maxWidth: "210mm" }}>

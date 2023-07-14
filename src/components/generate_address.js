@@ -9,13 +9,13 @@ const GenerateNewAddress = ({ address, handleAddressUpdate }) => {
             <>
             {
                 !address && (
-                    <button onClick={generateAddress} className="nav-link">Generate Address</button>
+                    <button onClick={generateAddress} className="btn btn-success btn-lg">Let's Start</button>
                 )
             }
 
             {address && (                
                    
-                <button onClick={generateAddress} className="nav-link">Generate New</button>
+                <button onClick={generateAddress} className="btn btn-primary btn-lg">Generate New</button>
                               
             )}
         </>
